@@ -72,4 +72,3 @@ print(f"Costo total de transporte: {costo_total}")
 
 print("Gracias por usar Esquina_NorOeste")
 
-
