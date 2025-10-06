@@ -1,7 +1,7 @@
 #  Esquina Noroeste - Método de Transporte
 
 ###  Versión 1: Consola
-#### 🔧 Requisitos
+#### Lo que se necesita para correr 
 - **Python 3.8+**
 - **Librería:** `numpy` *(Esto es para trabajar más facil con matrices )*
 
