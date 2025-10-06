@@ -1,3 +1,4 @@
+# Buenasssss- acá voy dejando lo que usé por si lo quieren probar 
 #  Esquina Noroeste - Método de Transporte
 
 ###  Versión 1: Consola
