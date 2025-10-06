@@ -2,7 +2,7 @@
 
 ###  Versión 1: Consola
 #### Lo que se necesita para correr 
-- **Python 3.8+**
+- **Python -yo use el 3.12 
 - **Librería:** `numpy` *(Esto es para trabajar más facil con matrices )*
 
 #### Instalación de libreria
@@ -15,10 +15,9 @@ pip install numpy
 
 
 #### Se necesita 
-- **Python 3.8+**
+
 - **Librerías:**
-  - `numpy`
-  - `tkinter` *(incluida por defecto en Python en teoria les deberia dejar ejecutar)*
+  - `tkinter` *( esto es para crear las ventanas de ka interfaz grafica, esta va incluida por defecto en Python en teoria les deberia dejar ejecutar)*
   - `matplotlib` *(esto es para mostara el grafiquito final)*
 
 #### Instalación de libreria
