@@ -1,4 +1,5 @@
-import tkinter as tk
+##import tkinter as tk
+import ttkbootstrap as tk
 from tkinter import messagebox
 import numpy as np
 import matplotlib.pyplot as plt
@@ -7,20 +8,20 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 class EsquinaNoroesteApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("Método de la Esquina Noroeste")
+        self.root.title("Método Esquina Noroeste")
 
         self.frame_inicio = tk.Frame(root)
         self.frame_inicio.pack(pady=10)
-
-        tk.Label(self.frame_inicio, text="Número de orígenes (filas):").grid(row=0, column=0)
+        tk.Label(self.frame_inicio, text="Ingrese las dimensiones de la matriz de costos").grid(row=0, columnspan=2)
+        tk.Label(self.frame_inicio, text="Número de orígenes (filas):").grid(row=1, column=0)
         self.entry_m = tk.Entry(self.frame_inicio, width=5)
-        self.entry_m.grid(row=0, column=1)
+        self.entry_m.grid(row=1, column=1)
 
-        tk.Label(self.frame_inicio, text="Número de destinos (columnas):").grid(row=1, column=0)
+        tk.Label(self.frame_inicio, text="Número de destinos (columnas):").grid(row=2, column=0)
         self.entry_n = tk.Entry(self.frame_inicio, width=5)
-        self.entry_n.grid(row=1, column=1)
+        self.entry_n.grid(row=2, column=1)
 
-        tk.Button(self.frame_inicio, text="Continuar", command=self.crear_tablas).grid(row=2, column=0, columnspan=2, pady=5)
+        tk.Button(self.frame_inicio, text="Continuar", command=self.crear_tablas).grid(row=3, column=0, columnspan=2, pady=5)
 
     def crear_tablas(self):
         try:
@@ -124,7 +125,7 @@ class EsquinaNoroesteApp:
         self.resultado.insert(tk.END, f"{asignaciones}\n\n")
 
         self.resultado.insert(tk.END, f"Costo total de transporte: {costo_total}\n")
-        self.resultado.insert(tk.END, "\nGracias por usar Esquina_NorOeste")
+        
 
         # Mostrar resultados con matplotlib
         for widget in self.canvas_frame.winfo_children():
@@ -151,6 +152,6 @@ class EsquinaNoroesteApp:
 
 
 if __name__ == "__main__":
-    root = tk.Tk()
+    root = tk.Window(themename="superhero")
     app = EsquinaNoroesteApp(root)
     root.mainloop()
