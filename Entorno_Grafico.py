@@ -124,7 +124,7 @@ class EsquinaNoroesteApp:
         self.resultado.insert(tk.END, "Matriz de asignaciones:\n")
         self.resultado.insert(tk.END, f"{asignaciones}\n\n")
 
-        self.resultado.insert(tk.END, f"Costo total de transporte: {costo_total}\n")
+        self.resultado.insert(tk.END, f"Costo total de transporte es: {costo_total}\n")
 
 
 
