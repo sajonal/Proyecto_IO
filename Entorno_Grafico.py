@@ -125,7 +125,6 @@ class EsquinaNoroesteApp:
         self.resultado.insert(tk.END, f"{asignaciones}\n\n")
 
         self.resultado.insert(tk.END, f"Costo total de transporte: {costo_total}\n")
-        
 
         # Mostrar resultados con matplotlib
         for widget in self.canvas_frame.winfo_children():
